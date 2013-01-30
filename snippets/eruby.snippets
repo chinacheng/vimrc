@@ -1,0 +1,69 @@
+snippet <
+	<% ${1} %>
+snippet <=
+	<%= ${1} %>
+snippet if
+	<% if ${1:condition} %>
+		${2}
+	<% end %>
+snippet els
+	<% if ${1} %>
+		${2}
+	<% else %>
+	<% end %>
+snippet rp 
+	<%= render :partial => "${1}" %> 
+snippet rpl 
+	<%= render :partial => "${1}", :locals=>{${2}} %> 
+snippet link 
+	<%= link_to "${1}", "url"%> 
+snippet table 
+	<table> 
+		${1} 
+	</table> 
+snippet thead 
+	<thead> 
+		${1} 
+	</thead> 
+snippet tbody
+	<tbody>
+		${1}
+	</tbody>
+snippet tr 
+	<tr> 
+		${1} 
+	</tr> 
+snippet td 
+	<td>${1}</td> 
+snippet html 
+	<html> 
+		${1} 
+	</html> 
+snippet head
+	<head>
+		${1}
+	</head>
+snippet title
+	<title>
+		${1}
+	</title>
+snippet body 
+	<body> 
+		${1} 
+	</body> 
+snippet div 
+	<div> 
+		${1} 
+	</div> 
+snippet a 
+	<a href=''></a> 
+snippet span 
+	<span>${1}</span> 
+snippet ul 
+	<ul> 
+		${1} 
+	</ul> 
+snippet li 
+	<li>${1}</li> 
+snippet img 
+	<img src="${1}"/> 
