@@ -22,3 +22,5 @@ let NERDTreeIgnore = ['\.pyc$'] " nerdtree filter the file end with .pyc
 filetype on             " 侦测文件类型
 filetype plugin on      " 载入文件类型插件
 filetype indent on      " 为特定文件类型载入相关缩进文件
+
+set laststatus=2        " 总是显示状态栏
