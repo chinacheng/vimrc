@@ -1,7 +1,8 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_cnt =6
 let g:netrw_dirhist_1='/home/chinacheng/.vim/snippets'
 let g:netrw_dirhist_2='/etc/mysql/conf.d'
 let g:netrw_dirhist_3='/home/chinacheng/.vim/snippets'
 let g:netrw_dirhist_4='/home/chinacheng/.vim'
 let g:netrw_dirhist_5='/var/lib/mongodb'
+let g:netrw_dirhist_6='/etc/cron.hourly'
