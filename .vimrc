@@ -45,3 +45,7 @@ set t_Co=256
 " wombat bubblegum light luna dark laederon ubaryd powerlineish jellybeans base16 molokai badwolf tomorrow simple light solarized
 let g:airline_theme='wombat'
 let g:airline_powerline_fonts=1
+
+" fuzzy find pop menu color
+hi Pmenu ctermbg=red  "for vim
+hi Pmenu guibg=red    "for gvim
