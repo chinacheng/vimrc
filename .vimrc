@@ -33,7 +33,7 @@ set laststatus=2              " 总是显示状态栏
 " elflord ron pablo murphy delek torte zellner desert 
 " jellybeans peachpuff koehler slate ubuntu darkblue 
 " shine morning evening blue codeschool 
-color elflord
+color peachpuff
  
 " set guifont=Monaco:h12
 " let g:NERDTreeWinPos = "right"
@@ -45,8 +45,9 @@ color elflord
 
 " set background=
 " hi Search guibg=peru guifg=wheat
+
 " fuzzy find pop menu color
-hi Pmenu ctermbg=red  "for vim
+" hi Pmenu ctermbg=red  "for vim
 
 
 "vim-airline config
@@ -58,4 +59,9 @@ set t_Co=256
 let g:airline_theme='wombat'
 let g:airline_powerline_fonts=1
 
+" shotcuts mp
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+
+map <C-n> :NERDTreeToggle<CR>
 
