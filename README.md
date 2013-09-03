@@ -4,6 +4,12 @@ vimrc
 plugins and config for my vim
 
 =====
+the default color schema of ubunttu
+
+The vim of ubuntu installed by apt-get install has it's own default color set
+/usr/share/vim/vim73/colors
+
+=====
 vim-airline 相关字体安装
 
 vim-airline can display those fancy symbols in the statusline in just a few steps:
