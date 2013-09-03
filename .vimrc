@@ -29,8 +29,11 @@ helptags ~/.vim/doc           " 加载插件的帮助文档
 set laststatus=2              " 总是显示状态栏
 
 " the color set of vim
-
-color desert
+" the colors: 
+" elflord ron pablo murphy delek torte zellner desert 
+" jellybeans peachpuff koehler slate ubuntu darkblue 
+" shine morning evening blue codeschool 
+color elflord
  
 " set guifont=Monaco:h12
 " let g:NERDTreeWinPos = "right"
@@ -41,7 +44,7 @@ color desert
 " set cpoptions+=$ " puts a $ marker for the end of words/lines in cw/c$ commands
 
 " set background=
-hi Search guibg=peru guifg=wheat
+" hi Search guibg=peru guifg=wheat
 " fuzzy find pop menu color
 hi Pmenu ctermbg=red  "for vim
 
