@@ -70,4 +70,5 @@ let g:ctrlp_cmd = 'CtrlP'
 map <C-n> :NERDTreeToggle<CR>
 let NERDTreeIgnore = ['\.pyc$'] " nerdtree filter the file end with .pyc
 
+" set cursorcolumn " 竖线标尺
 
