@@ -22,11 +22,16 @@ filetype plugin indent on     " 启用自动补全
 "   filetype indent on
 " endif
 
-" indent是其中一种模式，还有 marker模式 
+" indent是其中一种模式，还有 marker syntax模式 
 " zo 打开 zO 所在范围内全部打开 zc 折叠 zC 所在范围内全部折叠 
 " [z 当前折叠的开始处 ]z 当时折叠的结束处
 " zj 向下移动到一个折叠处 zk 向上移动到折叠处
-" set foldmethod=indent        " 代码折叠
+" set foldmethod=indent       " 代码折叠
+set foldenable                " 开始折叠
+set foldmethod=syntax         " 设置语法折叠
+set foldcolumn=0              " 设置折叠区域的宽度
+setlocal foldlevel=1          " 设置折叠层数为
+" set foldclose=all           " 设置为自动关闭折叠 
 
 helptags ~/.vim/doc           " 加载插件的帮助文档 
 
