@@ -13,8 +13,7 @@ The vim of ubuntu installed by apt-get install has it's own default color set
 =====
 
 vim-airline 相关字体安装
-======
-
+   
 the powerline fold is not need in the .vim file, it's fonts for airline 
 
 vim-airline can display those fancy symbols in the statusline in just a few steps:
@@ -27,6 +26,8 @@ Enable fancy symbols by adding this line to your vimrc: let g:airline_powerline_
 
 设置terminal字体，打开terminal -> 编辑 -> 配置文件首选项 -> 常规 -> 选择新添加的powerline的字体
 
-Ack
 =====
+
+Ack
+
 First of all, you need 'sudo apt-get install ack-grep' if you are using ubuntu system.
