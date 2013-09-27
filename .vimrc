@@ -8,7 +8,9 @@ set tabstop=2                 " 设置tab长度为2
 set expandtab                 " 使用合适数目的空格插入 <Tab>.
                               " 当 '自动缩进' 打开时使用 '>' 和 '<' 命令来用空格缩进
 										          " 当 'expandtab' 打开时使用 CTRL-V <Tab> 来插入tab.
+                             
 set hlsearch                  " 搜索是高亮显示搜索结果
+set incsearch                 " 输入搜索内容时就显示搜索结果
 
 set encoding=utf-8            " 设置编码格式
 
@@ -23,15 +25,17 @@ filetype plugin indent on     " 启用自动补全
 " endif
 
 " indent是其中一种模式，还有 marker syntax模式 
+" za 2中状态的切换
 " zo 打开 zO 所在范围内全部打开 zc 折叠 zC 所在范围内全部折叠 
 " [z 当前折叠的开始处 ]z 当时折叠的结束处
 " zj 向下移动到一个折叠处 zk 向上移动到折叠处
 " set foldmethod=indent       " 代码折叠
-set foldenable                " 开始折叠
-set foldmethod=syntax         " 设置语法折叠
-set foldcolumn=0              " 设置折叠区域的宽度
-setlocal foldlevel=1          " 设置折叠层数为
-" set foldclose=all           " 设置为自动关闭折叠 
+" set foldenable                " 开始折叠
+set nofoldenable
+" set foldmethod=syntax         " 设置语法折叠
+" set foldcolumn=0              " 设置折叠区域的宽度
+" setlocal foldlevel=1          " 设置折叠层数为
+" set foldclose=all             " 设置为自动关闭折叠 
 
 helptags ~/.vim/doc           " 加载插件的帮助文档 
 
@@ -68,9 +72,16 @@ set t_Co=256
 let g:airline_theme='wombat'
 let g:airline_powerline_fonts=1
 
+" map key mapping
+" C -> ctrl, A -> Alt, S -> Shift,<CR> -> Enter  
+
+" when press the keys 'ctrl shift j' split a line into two line in the position of cursor 
+map <C-J> i<CR><ESC>
+
 " shotcuts mp
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
+
 
 map <C-n> :NERDTreeToggle<CR>
 let NERDTreeIgnore = ['\.pyc$'] " nerdtree filter the file end with .pyc
