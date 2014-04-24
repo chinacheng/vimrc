@@ -21,6 +21,19 @@ snippet table
 	<table> 
 		${1} 
 	</table> 
+snippet table_f
+	<table class='common table-bordered table-striped table-hover pt20'>
+	  <thead>
+	     <tr>
+	       <th></th> 
+	     </tr> 
+	  </thead> 
+	  <tbody>
+	    <tr> 
+	      <td><%=  %></td> 
+	    </tr> 
+	  </tbody>
+	</table>      
 snippet thead 
 	<thead> 
 		${1} 
@@ -33,6 +46,8 @@ snippet tr
 	<tr> 
 		${1} 
 	</tr> 
+snippet th 
+	<th>${1}</th> 
 snippet td 
 	<td>${1}</td> 
 snippet html 
